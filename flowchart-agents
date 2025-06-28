@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-06-27",
+  "agents": [
+    {
+      "id": "spectra",
+      "name": "Spectra",
+      "nickname": "Turn your numbers into Interactive Charts",
+      "description": "Generates downloadable HTML visual reports (styled with Tailwind) including interactive charts based on the FlowChart project data.",
+      "triggerKeywords": ["report", "chart", "dashboard", "visualize", "data"],
+      "inputRequirements": ["FlowChart File", "optional chart preferences", "node ID or type"],
+      "capabilities": [
+        "Analyze FlowChart nodes for status, deadlines, priorities",
+        "Generate interactive charts using Chart.js or ApexCharts",
+        "Style reports using Tailwind CSS",
+        "Export as downloadable HTML report"
+      ],
+      "templates": ["modern-dashboard", "gantt-preview", "priority-pulse"],
+      "outputType": "html",
+      "supportedFileTypes": [".json"]
+    },
+    {
+      "id": "scout",
+      "name": "Scout",
+      "nickname": "The Research Retriever",
+      "description": "Parses uploaded reports or links and extracts insights into nodes.",
+      "triggerKeywords": ["research", "analysis", "trends", "insights"],
+      "inputRequirements": ["FlowChart File", "PDF or URL", "target node"],
+      "capabilities": [
+        "Parse PDF or online source",
+        "Summarize insights into a selected node",
+        "Add citations or links"
+      ],
+      "templates": [],
+      "outputType": "node-enhanced",
+      "supportedFileTypes": [".json", ".pdf", ".docx"]
+    },
+    {
+      "id": "echo",
+      "name": "Echo",
+      "nickname": "The Social Copy Agent",
+      "description": "Generates engaging social captions, announcement text, and hashtags for milestones or nodes.",
+      "triggerKeywords": ["launch", "caption", "social", "announcement", "copy"],
+      "inputRequirements": ["Node or project milestone", "target platform", "tone preference (optional)"],
+      "capabilities": [
+        "Write short-form social content",
+        "Suggest hashtags",
+        "Repurpose node data into caption-ready copy"
+      ],
+      "templates": ["product-launch-caption", "event-post", "thread-outline"],
+      "outputType": "text",
+      "supportedFileTypes": [".json"]
+    },
+    {
+      "id": "delta",
+      "name": "Delta",
+      "nickname": "The Evaluator",
+      "description": "Builds score matrices, pros/cons comparisons, and risk assessments for decision nodes.",
+      "triggerKeywords": ["compare", "score", "evaluate", "decision"],
+      "inputRequirements": ["FlowChart File", "2+ options or scenarios"],
+      "capabilities": [
+        "Generate scoring tables",
+        "Analyze pros/cons of service or product choices",
+        "Embed structured output into nodes"
+      ],
+      "templates": ["comparison-matrix", "risk-scorecard"],
+      "outputType": "node-enhanced",
+      "supportedFileTypes": [".json"]
+    },
+    {
+      "id": "visor",
+      "name": "Visor",
+      "nickname": "The Visual Stylist",
+      "description": "Creates AI-generated images and visual mood boards based on node theme or creative prompts.",
+      "triggerKeywords": ["thumbnail", "visual", "banner", "design", "mockup"],
+      "inputRequirements": ["FlowChart File", "visual goal or theme"],
+      "capabilities": [
+        "Generate PNG or JPG visuals",
+        "Support stylistic prompts (e.g. neon, glassmorphism)",
+        "Provide asset download link"
+      ],
+      "templates": ["promo-thumbnail", "presentation-slide-bg"],
+      "outputType": "image",
+      "supportedFileTypes": [".json"]
+    }
+  ]
+}
