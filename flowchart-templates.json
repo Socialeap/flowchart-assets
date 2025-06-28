@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-06-27",
+  "templates": [
+    {
+      "id": "spectra-modern-dashboard",
+      "agent": "spectra",
+      "name": "Modern Dashboard",
+      "description": "Clean, responsive HTML layout styled with Tailwind, includes project title, description, task status pie chart, and assignee bar chart.",
+      "sections": ["header", "summary", "chart-task-status", "chart-assignee-distribution", "footer"],
+      "libraries": ["TailwindCSS", "Chart.js"],
+      "outputType": "html"
+    },
+    {
+      "id": "spectra-priority-pulse",
+      "agent": "spectra",
+      "name": "Priority Pulse",
+      "description": "Visual dashboard focusing on task priorities. Includes color legend, pie chart of task urgency, and risk zone indicator.",
+      "sections": ["header", "chart-priority-pie", "legend", "risk-highlight"],
+      "libraries": ["TailwindCSS", "Chart.js"],
+      "outputType": "html"
+    },
+    {
+      "id": "echo-product-launch-caption",
+      "agent": "echo",
+      "name": "Product Launch Caption",
+      "description": "Social media caption format with bold opener, emoji CTA, hashtag bundle, and launch link block.",
+      "structure": ["hook", "value line", "cta emoji line", "link preview", "hashtags"],
+      "toneOptions": ["bold", "playful", "professional"],
+      "outputType": "text"
+    },
+    {
+      "id": "echo-event-post",
+      "agent": "echo",
+      "name": "Event Announcement Post",
+      "description": "A stylized caption format for promoting events. Includes event title, quick rundown, RSVP CTA, and reminder tags.",
+      "structure": ["event title", "summary line", "what to expect", "cta line", "reminder tags"],
+      "toneOptions": ["informal", "excited", "minimal"],
+      "outputType": "text"
+    }
+  ]
+}
